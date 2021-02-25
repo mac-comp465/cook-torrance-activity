@@ -8,8 +8,8 @@ Clone and generate the project files:
 
 ```
 cd yourCodeDirectory
-git clone https://github.com/mac-comp465-f18/cooktorranceactivity
-cd cooktorranceactivity
+git clone https://github.com/mac-comp465/cook-torrance-activity
+cd cook-torrance-activity
 mkdir build
 cd build
 cmake-gui ..

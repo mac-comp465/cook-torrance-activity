@@ -8,6 +8,8 @@ using namespace glm;
 
 App::App(int argc, char** argv) : VRApp(argc, argv)
 {
+    turntable.reset(new TurntableManipulator());
+    turntable->setCenterPosition(vec3(0,0,0));
 }
 
 App::~App()
@@ -83,9 +85,6 @@ void App::onRenderGraphicsContext(const VRGraphicsState &renderState) {
         environmentMap->setTexParameteri(GL_TEXTURE_MAG_FILTER, GL_LINEAR);
         
         skyBox.reset(new Skybox(environmentMap));
-        
-        turntable.reset(new TurntableManipulator());
-        turntable->setCenterPosition(vec3(0,0,0));
         
         // set the light position to roughly match up with the sun position in the skybox texture
         float radius = 10.0;

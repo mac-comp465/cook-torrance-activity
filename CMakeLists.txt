@@ -7,7 +7,7 @@ list(APPEND CMAKE_PREFIX_PATH ../basicgraphics/build/install ../minvr/build/inst
 message(STATUS "prefix path: ${CMAKE_PREFIX_PATH}")
 
 # Using 3.9 to get a modern version of FindOpenGL.cmake
-cmake_minimum_required (VERSION 3.9) 
+cmake_minimum_required (VERSION 3.10) 
 
 set (CMAKE_CXX_STANDARD 11)
 
